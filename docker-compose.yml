@@ -2,6 +2,8 @@ version: '3'
 
 services:
   wp:
+    labels:
+      shipyard.route: '/'
     image: wordpress:latest # https://hub.docker.com/_/wordpress/
     ports:
       - ${IP}:80:80 # change ip if required
